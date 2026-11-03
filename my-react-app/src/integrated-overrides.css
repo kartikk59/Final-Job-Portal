@@ -1,0 +1,83 @@
+.integrated-page {
+  width: 100%;
+  min-width: 0;
+  color: #1f2937;
+}
+
+.integrated-page a {
+  color: inherit;
+}
+
+/* Keep page and hero wrappers clear; cards and the navbar retain their own fills. */
+.candidate-page {
+  background: transparent !important;
+}
+
+.candidate-hero {
+  border: 1px solid rgba(255, 255, 255, 0.66) !important;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.64) !important;
+  box-shadow: 0 12px 35px rgba(67, 43, 26, 0.08) !important;
+  backdrop-filter: blur(16px) !important;
+  overflow: visible !important;
+}
+
+.prepzone > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+}
+
+.prep-arrow {
+  display: block;
+  width: 12px;
+  height: 12px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 160ms ease;
+}
+
+.prepzone:hover .prep-arrow,
+.prepzone:focus-within .prep-arrow {
+  transform: rotate(180deg);
+}
+
+.prep-menu {
+  top: calc(100% - 8px) !important;
+  z-index: 1000 !important;
+}
+
+.candidate-hero.nav-only-shell {
+  min-height: 0;
+  padding-bottom: 22px;
+}
+
+.article-hub-card {
+  background: rgba(255, 255, 255, 0.66) !important;
+  border-color: rgba(255, 255, 255, 0.82) !important;
+  box-shadow: 0 12px 35px rgba(67, 43, 26, 0.08) !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+.article-hub-card:hover {
+  background: rgba(255, 255, 255, 0.74) !important;
+}
+
+.nav-links > a:first-child:not(.active) {
+  color: #26303c;
+}
+
+.nav-links > a.active {
+  color: var(--orange-dark);
+}
+
+.nav-links > a:not(:first-child).active {
+  padding: 10px 17px;
+  border-radius: 999px;
+  background: rgba(255, 122, 0, 0.12);
+}
